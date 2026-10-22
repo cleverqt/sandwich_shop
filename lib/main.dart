@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sandwich_shop/screens/menu_screen.dart';
+
 
 void main() {
   runApp(const App());
@@ -11,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Sandwich Shop App',
-      home: OrderScreen(maxQuantity: 5),
+      home: const MenuScreen(),
     );
   }
 }
@@ -25,7 +27,7 @@ class OrderScreen extends StatefulWidget {
   State<OrderScreen> createState() {
     return _OrderScreenState();
   }
-}
+}a
 
 class _OrderScreenState extends State<OrderScreen> {
   int _quantity = 0;
